@@ -18,22 +18,33 @@
 <div class="container">
 
     <div class="row">
-        <div class="col-3">
-            <input type="text" class="form-control" id="name" placeholder="Введите имя">
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Виберіть країну</label>
+                </div>
+                <select name="country" class="custom-select" id="inputGroupSelect01">
+                    <option selected>Choose...</option>
+                    <option value="1">Україна</option>
+                    <option value="2">USA</option>
+                    <option value="3">Росія</option>
+                </select>
+            </div>
+
         </div>
-        <div class="col-9">
-            <button type="button" id="done" class="btn btn-primary mb-2">Готово</button>
+
+        <div class="col-4">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect02">Виберіть місто</label>
+                </div>
+                <select name="city" class="custom-select" id="inputGroupSelect02">
+                    <option selected>Choose...</option>
+                </select>
+            </div>
         </div>
     </div>
-    <br>
-    <div class="row">
-        <div class="col-12">
-            <button id="load" type="button" class="btn btn-secondary">Загрузка даних</button>
-            <p>
-            <div id="information" class="alert alert-primary" role="alert"></div>
-            </p>
-        </div>
-    </div>
+    <img id="img" src="img/0.jpg" class="img-fluid" alt="Responsive image">
 
 </div>
 
